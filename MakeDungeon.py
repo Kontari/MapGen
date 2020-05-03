@@ -1,4 +1,4 @@
-import random, sys
+import random, sys, time
 
 seed = random.randint(0,1000000000000)
 random.seed(seed)
@@ -47,13 +47,13 @@ def out():
         sys.stdout.write( str(floor[x][y]) )
         
   sys.stdout.write("\n")
-
+  time.sleep(0.8)
 
 floor = []
 #h = 30 # height
 #w = 50 # width
 h=30
-w=50 #30 for seeds
+w=60 #30 for seeds
 
 # KEY
 # # = wall
